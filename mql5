@@ -1,0 +1,113 @@
+
+//+------------------------------------------------------------------+
+//|                                              Blahtech VWAP MT5   |
+//|                                         Developer: forexroboteasy.com|
+//|                                         Development: Forex Robot Easy Team|
+//+------------------------------------------------------------------+
+
+// Include necessary libraries
+#include <Trade\Trade.mqh>
+
+// Define input parameters
+input int sessions = 1; // Number of sessions for VWAP line
+input int intervals = PERIOD_H1; // Intervals for VWAP line
+input bool anchored = true; // Use anchored VWAP line
+input bool continuous = false; // Use continuous VWAP line
+input bool previousDaySettlement = true; // Include previous day settlement line
+input bool stdDevBands = true; // Include standard deviation bands
+input ENUM_ALERT_TYPE alertType = ALERT_BAR_CLOSE; // Alert type: bar close or real-time
+input bool brokerVolumes = true; // Use broker volumes
+input bool tickVolumes = false; // Use tick volumes
+
+// Initialize objects
+CTrade trade;
+
+// Define function to calculate VWAP
+double CalculateVWAP(int session, int interval, bool anchored, bool continuous, bool brokerVolumes, bool tickVolumes)
+{
+    double vwap = 0.0;
+    
+    // Calculate VWAP based on selected parameters
+    // Add code here...
+    
+    return vwap;
+}
+
+// Define function to display VWAP line on MT5 platform
+void DisplayVWAP(double vwap)
+{
+    // Display VWAP line on MT5 platform
+    // Add code here...
+}
+
+// Define function to display previous day settlement line on MT5 platform
+void DisplayPreviousDaySettlement()
+{
+    // Display previous day settlement line on MT5 platform
+    // Add code here...
+}
+
+// Define function to display standard deviation bands on MT5 platform
+void DisplayStdDevBands()
+{
+    // Display standard deviation bands on MT5 platform
+    // Add code here...
+}
+
+// Define function to configure VWAP line sessions, intervals, and alert options
+void ConfigureVWAPLine(int& sessions, int& intervals, ENUM_ALERT_TYPE& alertType)
+{
+    // Configure VWAP line sessions, intervals, and alert options
+    // Add code here...
+}
+
+// Define function to test the code and ensure accurate calculation and functionality
+void TestCode()
+{
+    // Test the code and ensure accurate calculation and functionality
+    // Add code here...
+}
+
+// Define function to document the code with comments and explanations for each function
+void DocumentCode()
+{
+    // Document the code with comments and explanations for each function
+    // Add code here...
+}
+
+// Define function to deliver the completed code within the specified timeline
+void DeliverCode()
+{
+    // Deliver the completed code within the specified timeline
+    // Add code here...
+}
+
+// Entry point of the program
+void OnStart()
+{
+    // Calculate VWAP
+    double vwap = CalculateVWAP(sessions, intervals, anchored, continuous, brokerVolumes, tickVolumes);
+    
+    // Display VWAP line
+    DisplayVWAP(vwap);
+    
+    // Display previous day settlement line
+    if (previousDaySettlement)
+        DisplayPreviousDaySettlement();
+    
+    // Display standard deviation bands
+    if (stdDevBands)
+        DisplayStdDevBands();
+    
+    // Configure VWAP line sessions, intervals, and alert options
+    ConfigureVWAPLine(sessions, intervals, alertType);
+    
+    // Test the code
+    TestCode();
+    
+    // Document the code
+    DocumentCode();
+    
+    // Deliver the code
+    DeliverCode();
+}
